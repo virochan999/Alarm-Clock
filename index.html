@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alarm Clock</title>
+  <link rel="stylesheet" href="style.css" ></link>
+</head>
+<body>
+  <!-- Popup to show message to wake up or stop alarm -->
+  <div class="stop-alarm">
+  </div>
+
+  <!-- Main Alarm container -->
+  <div class="alarm">
+    <div class="main-alarm">
+    <div class="alarm-clock-container">
+      <div id="clock" class="alarm-clock">
+      </div>
+    </div>
+    <div class="btn-container">
+      <button type="button" class="alarm-btn" id="set-alarm-btn">
+        Add Alarm +
+      </button>
+    </div>
+  </div>
+    <div class="alarm-list-container">
+      <h1>Alarms List</h1>
+      <div class="alarm-list">
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup to select the alarm -->
+  <div id="popup-container">
+    <div class="setup-alarm">
+      <div class="alarm-popup-container">
+        <div class="alarm-time-container">
+          <label for="alarm-time">Alarm Time:</label>
+          <input type="time" id="alarm-time" name="alarm-time" step="1">
+          <div class="empty-error"></div>
+        </div>
+        <div class="popup-btns">
+          <button type="button" class="btn set-alarm">Submit</button>
+          <button type="button" class="btn cancel-alarm">Cancel</button>
+        </div>
+        <div class="alarm-list-container-popup">
+          <div class="alarm-popup-heading text-center">
+            Alarms List
+          </div>
+          <div class="alarm-list-popup">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="./src/index.js"></script>
+</body>
+</html>
