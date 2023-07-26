@@ -38,6 +38,10 @@ alarmBtn.addEventListener('click', () => {
 
 /* On cancel alarm button click */
 hidePopup.addEventListener('click', () => {
+  const alarmInput = document.querySelector('#alarm-time');
+  const error = document.querySelector('.error');
+  alarmInput.value = '';
+  if(error) error.textContent = '';
   popupContainer.style.display = 'none';
   alarm.style.display = 'block';
 });
@@ -69,7 +73,6 @@ submitBtn.addEventListener('click', () => {
   /* Check for duplicate alarms */
   let isAlarm = false;
   alarms.forEach((alarm) => {
-    console.log(alarm.time, alarmTime)
     if(alarm.time && alarm.time === alarmTime) {
       isAlarm = true;
       return;
