@@ -11,6 +11,9 @@ Users can set an alarm by providing the desired hour, minute, second, and AM/PM 
 ## Alarms List
 The application maintains a list of all the alarms set by the user. Each alarm entry in the list shows the set time in hours, minutes, seconds format. The list is updated dynamically whenever a new alarm is set or an existing alarm is deleted.
 
+## Validations
+Users can not submit any empty input. And also users can not be able to add duplicate alarms. If user tries to do any of the scenrios he will be shown a appropriate error message.
+
 ## Delete Alarm
 Each alarm entry in the alarms list has a delete button associated with it. When the user clicks the delete button, the corresponding alarm will be removed from the list. Importantly, when an alarm is deleted, it will not trigger an alert if the time has not passed.
 
